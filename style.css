@@ -1,5 +1,16 @@
-section {
-    background-color: #1F2937;
+body {
+    /*this makes the body the same height as the viewport*/
+    min-height: 100vh;
+    display: flex;
+    /*this sticks the footer to the bottom*/
+    flex-direction: column;
+    flex: 1;
+    
+}
+
+/*style for section 1 and header*/
+.one {
+    background: #1F2937;
     height: 350px;
 }
 
@@ -14,26 +25,26 @@ section {
 
 .intro {
     display: flex;
-    flex: 1;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 24px;
-    gap: 50px;
+    gap: 120px;
 }
 
 .main-info {
     max-width: 350px;
     font-size: 18px;
     color: #e5e7eb;
+    flex-shrink: 0;
 }
 
-.title {
+.title-one {
     font-size: 48px;
     font-weight: 800;
     color: #f9faf8;
 }
 
 .placeholder {
-    background: #aaa;
+    background: #94979e;
     color:#e5e7eb;
     width: 380px;
     height: 200px;
@@ -53,8 +64,42 @@ button {
     width: 120px;
 }
 
+/*style for section 2*/
+
+.two {
+    text-align: center;
+    height: 350px;
+}
+
+.title-two {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    margin: 24px 0;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+img {
+    border: 3px solid #3882f6;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.info {
+    max-width: 200px;
+}
+
+
+/*header links*/
 ul {
     display: flex;
+    /*this removes the dots on the list items*/
     list-style-type: none;
     gap: 16px;
 }
@@ -62,6 +107,7 @@ ul {
 a {
     font-size: 18px;
     color: #e5e7eb;
+    /*this removes the line under the links*/
     text-decoration: none;
 
 }
