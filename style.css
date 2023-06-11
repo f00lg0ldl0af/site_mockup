@@ -69,6 +69,7 @@ button {
 .two {
     text-align: center;
     height: 350px;
+    margin-bottom: 16px;
 }
 
 .title-two {
@@ -95,6 +96,64 @@ img {
     max-width: 200px;
 }
 
+/*style for section 3*/
+
+.three {
+    background: #e5e7eb;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    color: #1F2937;
+
+}
+
+.container {
+   width: 750px;
+}
+
+.author {
+   text-align: right;
+   font-weight: 800;
+
+}
+/*style for section 4*/
+.four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    font-size: 16px;
+    color: #e5e7eb;
+
+}
+
+.modal {
+    background: #3882f6;
+    display: flex;
+    padding: 32px;
+    border-radius: 10px;
+    width: 800px;
+}
+
+.title-four {
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: 900;
+    margin-bottom: 6px;
+}
+
+
+button.cta {
+    border: 1px solid white;
+}
 
 /*header links*/
 ul {
